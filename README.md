@@ -14,8 +14,20 @@ Using the np.linalg.solve(), we can find the solutions.
 ### Step 4: 
 End the program
 ## Program:
-##DEVOLOPED BY :Dhanush Rajan.T
-##REFARANCE.NO:212225230052
+```
+#Program to find the solution for the given linear equations.
+#Developed by: DHANUSH RAJAN.T
+#RegisterNumber: 212225230052
+import os
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+import numpy as np
+A = np.array([[5, -3, -10],
+              [2, 2, -3],
+              [-3, -1, 5]])
+B = np.array([-9, 4, -1])
+X = np.linalg.solve(A, B)
+print(np.round(X))
+```
 
 ## Output:<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74e5a205-f5a0-47cd-a8f4-7025a0e5e165" />
 
